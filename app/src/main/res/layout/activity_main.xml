@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.eventdispatchdemo.view.MyViewGroup1
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical"
     tools:context="com.eventdispatchdemo.activity.MainActivity">
 
-    <com.eventdispatchdemo.view.MyViewGroup2
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:background="@android:color/holo_red_light">
-        <com.eventdispatchdemo.view.MyView
-            android:background="@android:color/white"
-            android:layout_width="150dp"
-            android:layout_height="150dp"/>
-    </com.eventdispatchdemo.view.MyViewGroup2>
-</com.eventdispatchdemo.view.MyViewGroup1>
+    <com.eventdispatchdemo.view.MyViewGroup1
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/holo_blue_dark"
+        tools:context="com.eventdispatchdemo.activity.MainActivity">
+
+        <com.eventdispatchdemo.view.MyViewGroup2
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:background="@android:color/holo_red_light">
+
+            <com.eventdispatchdemo.view.MyView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/black"/>
+        </com.eventdispatchdemo.view.MyViewGroup2>
+
+    </com.eventdispatchdemo.view.MyViewGroup1>
+    <com.eventdispatchdemo.view.MyButton
+        android:id="@+id/btn_main"
+        android:text="按钮"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

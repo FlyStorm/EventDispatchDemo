@@ -49,7 +49,8 @@ public class MyViewGroup1 extends LinearLayout {
         return super.onTouchEvent(event);
     }
 
-    @Override
+    //伪代码
+    /*@Override
     public boolean dispatchTouchEvent(MotionEvent ev){
         //默认为false,不消费当前事件
         boolean consume=false;
@@ -60,6 +61,6 @@ public class MyViewGroup1 extends LinearLayout {
             //调用子容器的dispatchTouchEvent(ev)方法，进行事件分发
             consume=child.dispatchTouchEvent(ev);
         }
-    }
+    }*/
 
 }
